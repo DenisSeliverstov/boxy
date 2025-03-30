@@ -9,7 +9,7 @@ export default function Home() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("https://boxy-backend-kzfldfyyc-denis-projects-b5070b09.vercel.app/api/data")
+    axios.get("/api/data")
       .then((response) => {
         setData(response.data);
         setLoading(false);
